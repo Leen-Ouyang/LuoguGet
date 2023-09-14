@@ -63,16 +63,6 @@ difficulty_mapping = {
 # 洛谷题目的URL
 base_url = "https://www.luogu.org/problemnew/show/"
 
-# 定义函数来创建目录
-def create_directory(path):
-    if not os.path.exists(path):
-        os.makedirs(path)
-
-# 定义函数来保存Markdown文件
-def save_markdown_file(filename, content):
-    with open(filename, "w", encoding="utf-8") as file:
-        file.write(content)
-
 # 定义函数来获取标签数据，添加异常处理
 def get_tags():
     try:
